@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  width: fit-content;
+  margin: 1rem auto;
+}
+.container {
+  background: #f5f8ff;
+  display: flex;
+  position: relative;
+  max-width: 1024px;
+  height: auto;
+  min-height: 25rem;
+  max-height: 50rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.inputs {
+  background: #fff;
+  position: fixed;
+  width: 15rem;
+  padding: 1rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.singleInput {
+  margin-bottom: 0.5rem;
+}
+
+.contacts {
+  background: #fff;
+  width: 100%;
+  padding: 1rem;
+  margin-left: 16rem;
+  overflow-y: scroll;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.singleContact {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: solid 2px #333;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.label,
+.info {
+  line-height: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.buttons > button {
+  margin-right: 1rem;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.success {
+  background-color: #4caf50;
+}
+.success:hover {
+  background-color: #46a049;
+}
+
+.blue {
+  background-color: #2196f3;
+}
+.blue:hover {
+  background: #0b7dda;
+}
+
+.danger {
+  background-color: #f44336;
+}
+.danger:hover {
+  background: #da190b;
+}

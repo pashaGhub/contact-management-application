@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Contact Management Application</h1>
+    <div class="container">
+      <form class="inputs" id="createForm">
+        <div class="singleInput">
+          <label for="fName">First name:</label>
+          <input
+            type="text"
+            id="fName"
+            name="fName"
+            pattern="[A-Za-z]*"
+            maxlength="15"
+            title="Only letters are allowed"
+            required
+          />
+        </div>
+        <div class="singleInput">
+          <label for="lName">Last name:</label>
+          <input
+            type="text"
+            id="lName"
+            name="lName"
+            pattern="[A-Za-z]*"
+            maxlength="15"
+            title="Only letters are allowed"
+            required
+          />
+        </div>
+        <div class="singleInput">
+          <label for="date">Date of birth:</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="singleInput">
+          <label for="phone">Phone number:</label>
+          <input
+            type="number"
+            id="phone"
+            name="phone"
+            maxlength="15"
+            required
+          />
+        </div>
+        <div class="singleInput">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" maxlength="25" required />
+        </div>
+        <div class="singleInput">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" maxlength="30" />
+        </div>
+        <button type="submit" class="btn success" id="createBtn">
+          Create contact
+        </button>
+      </form>
+      <div class="contacts" id="printedContacts"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
